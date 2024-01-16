@@ -1,0 +1,59 @@
+footer{
+
+    margin: 0 8% 2% 15%;
+    position: relative;
+    bottom: 30px;
+    display: grid;
+    grid-template-columns: 30% repeat(4, 1fr);
+    column-gap: 1rem;
+}
+.banner, .products, .company, .support, .legal{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+}
+footer span{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.banner img{
+    width: 24px;
+    height: 24px;
+}
+
+.banner-logo{
+    display: flex;
+    column-gap: 0.4rem;
+    align-items: center;
+}
+.banner strong{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--gray);
+}
+.products a, .company a, .support a, .legal a{
+    color: var(--gray);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.trade-mark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.trade-mark span{
+    padding: 1.4%;
+    font-size: 0.7rem;
+    color: var(--dark-gray);
+    border-top: 1px solid var(--dark-gray);
+    width: 60%;
+    text-align: center;
+}
+@media screen and (max-width:550px) {
+    footer{
+        grid-template-columns: repeat(auto-fill, minmax(110px,3fr));
+        row-gap: 1rem;
+    }
+}
